@@ -1,0 +1,90 @@
+/* Ticket card container */
+.ticket-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+
+/* Styling for the ticket ID */
+.ticket-id {
+  font-size: 12px;
+  color: #999;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Aligning title and status */
+.ticket-status {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Ticket title with space between icon and text */
+.ticket-title {
+  margin-left: 6px;
+  color: #333;
+  font-size: small;
+}
+
+/* Styling for ticket priority */
+.ticket-info {
+  display: flex;
+}
+
+.ticket-priority {
+  display: flex;
+  font-size: 14px;
+  color: #666;
+  align-items: center;
+}
+
+/* Box for the icon */
+.priority-icon-box {
+  border: 1px solid #ddd; /* Border around the icon box */
+  padding: 4px; /* Padding inside the icon box */
+  border-radius: 4px; /* Slight border-radius for the box */
+  background-color: #f0f0f0; /* Light background for the icon box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Box for the text */
+.priority-text-box {
+  border: 1px solid #ddd; /* Border around the text box */
+  padding: 4px 8px; /* Padding inside the text box */
+  border-radius: 4px; /* Slight border-radius for the box */
+  background-color: #f9f9f9; /* Light background for the text box */
+}
+
+/* Icon styling inside the priority-icon-box */
+.priority-icon-box img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ticket-card {
+    padding: 10px;
+  }
+
+  .ticket-status, 
+  .ticket-priority {
+    font-size: 14px;
+  }
+
+  .priority-icon-box img {
+    width: 14px;
+    height: 14px;
+  }
+}

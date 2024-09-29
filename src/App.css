@@ -1,0 +1,146 @@
+.App-header {
+  background-color: #e0e2e4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f5f7;
+}
+
+.App {
+  padding: 0px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f7;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f5f7;
+  flex-wrap: wrap; /* Allows wrapping of columns */
+}
+
+.group-column {
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+  min-width: 250px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.ticket-list {
+  margin-top: 10px;
+}
+
+.group-info {
+  display: flex;
+  align-items: center;
+}
+
+.group-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.group-name {
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.group-count {
+  color: #888;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.group-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  padding: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .kanban-board {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .group-column {
+    margin-bottom: 10px;
+  }
+
+  .group-name {
+    font-size: 14px;
+  }
+
+  .group-count {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .group-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .group-actions {
+    flex-direction: row;
+  }
+
+  .action-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .group-name {
+    font-size: 12px;
+  }
+
+  .group-count {
+    font-size: 10px;
+  }
+}
